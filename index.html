@@ -6,15 +6,15 @@
     <meta name="theme-color" content="#0b0b0b" />
     <meta
       name="description"
-      content="Portfólio audiovisual de Sâmilly de Oliveira Saraiva: atuação, fotografia, direção de arte, câmera, narração e música."
+      content="Portfólio audiovisual de Sâmilly de Oliveira Saraiva: produção, direção de equipe, gestão de gravações, captação, montagem, edição e criação."
     />
-    <meta property="og:title" content="Sâmilly de Oliveira Saraiva — Portfólio Audiovisual" />
+    <meta property="og:title" content="Sâmilly de Oliveira Saraiva — Produção e Portfólio Audiovisual" />
     <meta
       property="og:description"
-      content="Trabalhos selecionados e créditos de Sâmilly de Oliveira Saraiva."
+      content="Produção audiovisual, direção de equipe, edição e trajetória de Sâmilly de Oliveira Saraiva entre 2024 e 2026."
     />
     <meta property="og:type" content="website" />
-    <title>Sâmilly de Oliveira Saraiva — Portfólio Audiovisual</title>
+    <title>Sâmilly de Oliveira Saraiva — Produção e Portfólio Audiovisual</title>
     <link
       rel="icon"
       type="image/svg+xml"
@@ -380,6 +380,105 @@
         }
       }
 
+      .about-section {
+        display: grid;
+        grid-template-columns: minmax(17rem, 0.55fr) minmax(0, 1.45fr);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .about-heading {
+        display: flex;
+        min-height: 44rem;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: clamp(4rem, 7vw, 7rem) 2rem;
+        border-right: 1px solid var(--line);
+      }
+
+      .about-heading h2 {
+        max-width: 7ch;
+        margin: 1.5rem 0 0;
+        font-family: var(--display);
+        font-size: clamp(3.5rem, 7vw, 7.4rem);
+        font-weight: 900;
+        letter-spacing: -0.065em;
+        line-height: 0.82;
+        text-transform: uppercase;
+      }
+
+      .about-stamp {
+        width: max-content;
+        border: 1px solid var(--accent);
+        border-radius: 999px;
+        padding: 0.7rem 0.9rem;
+        color: var(--accent);
+        font: 0.74rem/1 var(--mono);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .about-content {
+        display: grid;
+        align-content: center;
+        gap: clamp(2.4rem, 5vw, 5rem);
+        padding: clamp(4rem, 8vw, 8rem) clamp(2rem, 6vw, 7rem);
+      }
+
+      .about-lead {
+        max-width: 19ch;
+        margin: 0;
+        font-family: var(--display);
+        font-size: clamp(2.2rem, 4.7vw, 5.2rem);
+        font-weight: 800;
+        letter-spacing: -0.05em;
+        line-height: 0.95;
+        text-transform: uppercase;
+      }
+
+      .about-lead em {
+        color: var(--accent);
+        font-style: normal;
+      }
+
+      .about-columns {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: clamp(1.5rem, 4vw, 4rem);
+      }
+
+      .about-columns p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 1.02rem;
+      }
+
+      .about-columns strong {
+        color: var(--paper);
+      }
+
+      .role-highlight {
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr);
+        gap: 1.2rem;
+        align-items: start;
+        border-top: 1px solid var(--line);
+        padding-top: 1.4rem;
+      }
+
+      .role-highlight span {
+        color: var(--accent);
+        font: 0.78rem/1.4 var(--mono);
+      }
+
+      .role-highlight strong {
+        max-width: 25ch;
+        font-family: var(--display);
+        font-size: clamp(1.5rem, 2.7vw, 2.8rem);
+        letter-spacing: -0.035em;
+        line-height: 1;
+        text-transform: uppercase;
+      }
+
       .work-section {
         padding: clamp(5rem, 9vw, 9rem) 2rem;
       }
@@ -610,6 +709,106 @@
         gap: clamp(2rem, 4vw, 4rem);
       }
 
+      .media-year {
+        display: grid;
+        gap: 2rem;
+        padding-top: clamp(2.5rem, 5vw, 5rem);
+        border-top: 1px solid rgba(11, 11, 11, 0.28);
+      }
+
+      .media-year + .media-year {
+        margin-top: clamp(4rem, 8vw, 8rem);
+      }
+
+      .year-head {
+        display: grid;
+        grid-template-columns: minmax(8rem, 0.3fr) minmax(0, 1fr);
+        gap: clamp(1.5rem, 4vw, 4rem);
+        align-items: start;
+      }
+
+      .year-number {
+        margin: 0;
+        color: #d93617;
+        font-family: var(--display);
+        font-size: clamp(3.5rem, 7vw, 7rem);
+        font-weight: 900;
+        letter-spacing: -0.06em;
+        line-height: 0.8;
+      }
+
+      .year-copy h3 {
+        margin: 0 0 0.65rem;
+        font-family: var(--display);
+        font-size: clamp(1.7rem, 3vw, 3.2rem);
+        letter-spacing: -0.04em;
+        line-height: 0.95;
+        text-transform: uppercase;
+      }
+
+      .year-copy p {
+        max-width: 48rem;
+        margin: 0;
+        color: #5e5b55;
+      }
+
+      .year-summary {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 2rem;
+        align-items: end;
+        min-height: 16rem;
+        padding: clamp(1.5rem, 4vw, 3rem);
+        border: 1px solid rgba(11, 11, 11, 0.2);
+        background: rgba(255, 255, 255, 0.32);
+      }
+
+      .year-summary strong {
+        display: block;
+        max-width: 19ch;
+        margin-bottom: 1rem;
+        font-family: var(--display);
+        font-size: clamp(2rem, 4.5vw, 4.5rem);
+        letter-spacing: -0.05em;
+        line-height: 0.9;
+        text-transform: uppercase;
+      }
+
+      .year-summary p {
+        max-width: 40rem;
+        margin: 0;
+        color: #5e5b55;
+      }
+
+      .year-status {
+        border: 1px solid rgba(11, 11, 11, 0.28);
+        border-radius: 999px;
+        padding: 0.65rem 0.85rem;
+        color: #5e5b55;
+        font: 0.72rem/1 var(--mono);
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+
+      .year-roles {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.45rem;
+        margin: 1.4rem 0 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .year-roles li {
+        border: 1px solid rgba(11, 11, 11, 0.24);
+        border-radius: 999px;
+        padding: 0.48rem 0.7rem;
+        font-size: 0.72rem;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
       .social-card {
         min-width: 0;
         padding-top: 1rem;
@@ -756,6 +955,90 @@
         letter-spacing: -0.04em;
         line-height: 0.95;
         text-transform: uppercase;
+      }
+
+      .credit-copy {
+        display: grid;
+        gap: 0.75rem;
+      }
+
+      .credit-copy p {
+        max-width: 31rem;
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.88rem;
+        line-height: 1.45;
+      }
+
+      .credit-item:hover .credit-copy p {
+        color: rgba(11, 11, 11, 0.72);
+      }
+
+      .trajectory-section {
+        padding: clamp(5rem, 9vw, 9rem) 2rem;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .trajectory-head {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.52fr);
+        gap: 3rem;
+        align-items: end;
+        margin-bottom: clamp(3rem, 7vw, 7rem);
+      }
+
+      .trajectory-head h2 {
+        max-width: 10ch;
+        margin: 0;
+        font-family: var(--display);
+        font-size: clamp(3.2rem, 7vw, 7.4rem);
+        font-weight: 900;
+        letter-spacing: -0.065em;
+        line-height: 0.84;
+        text-transform: uppercase;
+      }
+
+      .trajectory-head > p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .timeline {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .timeline-item {
+        display: grid;
+        grid-template-columns: minmax(7rem, 0.25fr) minmax(13rem, 0.48fr) minmax(0, 1fr);
+        gap: clamp(1.5rem, 4vw, 4rem);
+        align-items: start;
+        padding: clamp(2rem, 4vw, 3.5rem) 0;
+        border-top: 1px solid var(--line);
+      }
+
+      .timeline-year {
+        color: var(--accent);
+        font-family: var(--display);
+        font-size: clamp(2.6rem, 5vw, 5.5rem);
+        font-weight: 900;
+        letter-spacing: -0.05em;
+        line-height: 0.8;
+      }
+
+      .timeline-item h3 {
+        margin: 0;
+        font-family: var(--display);
+        font-size: clamp(1.55rem, 2.8vw, 2.8rem);
+        letter-spacing: -0.04em;
+        line-height: 0.95;
+        text-transform: uppercase;
+      }
+
+      .timeline-item p {
+        margin: 0;
+        color: var(--muted);
       }
 
       .closing {
@@ -981,7 +1264,9 @@
         .social-head,
         .project,
         .project:nth-child(even),
-        .credit-section {
+        .credit-section,
+        .about-section,
+        .trajectory-head {
           grid-template-columns: 1fr;
         }
 
@@ -1003,6 +1288,32 @@
         }
 
         .social-section {
+          padding-right: 1rem;
+          padding-left: 1rem;
+        }
+
+        .about-heading {
+          min-height: 29rem;
+          padding-right: 1rem;
+          padding-left: 1rem;
+          border-right: 0;
+          border-bottom: 1px solid var(--line);
+        }
+
+        .about-content {
+          padding-right: 1rem;
+          padding-left: 1rem;
+        }
+
+        .year-summary {
+          grid-template-columns: 1fr;
+        }
+
+        .year-status {
+          width: max-content;
+        }
+
+        .trajectory-section {
           padding-right: 1rem;
           padding-left: 1rem;
         }
@@ -1047,6 +1358,32 @@
 
         .social-card-meta {
           grid-template-columns: auto minmax(0, 1fr);
+        }
+
+        .about-columns,
+        .year-head,
+        .timeline-item {
+          grid-template-columns: 1fr;
+        }
+
+        .about-heading {
+          min-height: 25rem;
+        }
+
+        .about-content {
+          gap: 2.5rem;
+        }
+
+        .role-highlight {
+          grid-template-columns: 1fr;
+        }
+
+        .year-summary {
+          min-height: 0;
+        }
+
+        .timeline-item {
+          gap: 1rem;
         }
 
         .social-roles {
@@ -1098,7 +1435,7 @@
     </style>
   </head>
   <body>
-    <a class="skip-link" href="#trabalhos">Pular para os trabalhos</a>
+    <a class="skip-link" href="#sobre">Pular para o conteúdo</a>
 
     <header class="site-header">
       <a class="wordmark" href="#inicio" aria-label="Voltar ao início">
@@ -1106,9 +1443,10 @@
         <span class="wordmark-text">Sâmilly Saraiva</span>
       </a>
       <nav class="site-nav" aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a>
         <a href="#trabalhos">Trabalhos</a>
-        <a href="#redes">Redes</a>
-        <a href="#atuacao">Atuação</a>
+        <a href="#redes">Produção</a>
+        <a href="#trajetoria">Trajetória</a>
       </nav>
       <button class="share-button" type="button" data-share>Compartilhar</button>
     </header>
@@ -1116,30 +1454,30 @@
     <main id="inicio">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-main">
-          <p class="eyebrow">Portfólio audiovisual — 2026</p>
+          <p class="eyebrow">Produção audiovisual — 2024—2026</p>
           <h1 id="hero-title">
             <span>Sâmilly</span>
             <span>de Oliveira</span>
             <span>Saraiva</span>
           </h1>
           <div class="hero-bottom">
-            <p class="hero-lead">Atuação e criação audiovisual entre imagem, cena e som.</p>
-            <a class="scroll-cue" href="#trabalhos">Ver trabalhos</a>
+            <p class="hero-lead">Direção de equipe, gestão de produção e criação audiovisual — da organização das gravações à edição final.</p>
+            <a class="scroll-cue" href="#sobre">Conhecer perfil</a>
           </div>
         </div>
         <aside class="hero-aside" aria-label="Resumo do portfólio">
           <dl class="hero-index">
             <div>
-              <dt>Seleção</dt>
-              <dd>03 obras audiovisuais</dd>
+              <dt>Experiência</dt>
+              <dd>Atuação desde 2024</dd>
             </div>
             <div>
-              <dt>Áreas</dt>
-              <dd>07 frentes criativas</dd>
+              <dt>Liderança</dt>
+              <dd>Direção de equipe de mídia</dd>
             </div>
             <div>
-              <dt>Base</dt>
-              <dd>Ceará, Brasil</dd>
+              <dt>Entrega</dt>
+              <dd>Da gravação à edição</dd>
             </div>
           </dl>
         </aside>
@@ -1147,10 +1485,37 @@
 
       <div class="marquee" aria-hidden="true">
         <div class="marquee-track">
-          <span>Elenco</span><span>Fotografia</span><span>Direção de arte</span><span>Câmera</span><span>Narração</span><span>Música</span><span>Edição</span>
-          <span>Elenco</span><span>Fotografia</span><span>Direção de arte</span><span>Câmera</span><span>Narração</span><span>Música</span><span>Edição</span>
+          <span>Produção</span><span>Direção de equipe</span><span>Gestão</span><span>Gravação</span><span>Montagem</span><span>Edição principal</span>
+          <span>Produção</span><span>Direção de equipe</span><span>Gestão</span><span>Gravação</span><span>Montagem</span><span>Edição principal</span>
         </div>
       </div>
+
+      <section class="about-section" id="sobre" aria-labelledby="about-title">
+        <div class="about-heading reveal">
+          <div>
+            <p class="section-label">Sobre mim</p>
+            <h2 id="about-title">Produção com visão criativa.</h2>
+          </div>
+          <span class="about-stamp">Audiovisual • 2024—2026</span>
+        </div>
+        <div class="about-content reveal">
+          <p class="about-lead">
+            Organizo pessoas, etapas e imagens para transformar ideias em <em>entregas audiovisuais.</em>
+          </p>
+          <div class="about-columns">
+            <p>
+              Sou <strong>Sâmilly de Oliveira Saraiva</strong>, produtora audiovisual, diretora da equipe de mídia e editora principal dos conteúdos do <strong>@adtctarrafas</strong>, perfil da Assembleia de Deus — Templo Central de Tarrafas.
+            </p>
+            <p>
+              Desde 2024, atuo na direção da equipe, gestão e organização das gravações, captação, montagem e edição. Nos curtas, também trabalho diante e por trás das câmeras, unindo fotografia, direção de arte, câmera, música, narração e elenco.
+            </p>
+          </div>
+          <div class="role-highlight">
+            <span>FUNÇÃO-CHAVE</span>
+            <strong>Diretora da equipe de mídia &amp; editora principal do @adtctarrafas</strong>
+          </div>
+        </div>
+      </section>
 
       <section class="work-section" id="trabalhos" aria-labelledby="work-title">
         <div class="section-head reveal">
@@ -1159,7 +1524,7 @@
             <h2 id="work-title">Trabalhos<br />selecionados</h2>
           </div>
           <p class="section-intro">
-            Três produções que reúnem diferentes experiências de Sâmilly diante e por trás das câmeras.
+            Três produções que comprovam um repertório criativo diverso, com experiência técnica, artística e de colaboração em equipe.
           </p>
         </div>
 
@@ -1208,7 +1573,7 @@
                 type="button"
                 data-video="Yf3XzFJwDV8"
                 data-title="Quinhentismo"
-                data-meta="Obra audiovisual"
+                data-meta="Obra audiovisual • 2025"
                 aria-label="Assistir Quinhentismo"
               >
                 <span class="play-label">Assistir</span>
@@ -1217,7 +1582,7 @@
             <div class="project-copy">
               <p class="project-number">02 / 03</p>
               <h3>Quinhentismo</h3>
-              <p class="project-meta">Obra audiovisual</p>
+              <p class="project-meta">Obra audiovisual • 2025</p>
               <ul class="role-list" aria-label="Funções exercidas">
                 <li>Fotografia</li>
                 <li>Direção de arte</li>
@@ -1260,12 +1625,12 @@
       <section class="social-section" id="redes" aria-labelledby="social-title">
         <div class="social-head reveal">
           <div>
-            <p class="section-label">Redes / conteúdo digital</p>
-            <h2 id="social-title">Edição &amp; captação</h2>
+            <p class="section-label">Produção contínua / 2024—2026</p>
+            <h2 id="social-title">Direção de mídia &amp; edição</h2>
           </div>
           <div class="social-copy">
             <p>
-              Registros audiovisuais produzidos para o Instagram da Assembleia de Deus — Templo Central de Tarrafas.
+              À frente da equipe de mídia do @adtctarrafas, Sâmilly coordena o fluxo de produção dos conteúdos: organização das gravações, direção de equipe, captação, montagem e edição principal.
             </p>
             <a class="instagram-link" href="https://www.instagram.com/adtctarrafas/" target="_blank" rel="noopener noreferrer">
               @adtctarrafas ↗
@@ -1273,112 +1638,231 @@
           </div>
         </div>
 
-        <div class="social-grid">
-          <article class="social-card reveal">
-            <div class="social-video-shell">
-              <video
-                controls
-                playsinline
-                preload="metadata"
-                poster="assets/adtc-tarrafas-video-01-poster.jpg"
-                aria-label="Registro audiovisual produzido para o Instagram da ADTC Tarrafas"
-              >
-                <source src="assets/adtc-tarrafas-video-01.mp4" type="video/mp4" />
-                Seu navegador não consegue reproduzir este vídeo.
-              </video>
+        <div class="media-year" id="midia-2026">
+          <div class="year-head reveal">
+            <p class="year-number">2026</p>
+            <div class="year-copy">
+              <h3>Produção, montagem e edição principal</h3>
+              <p>Seleção de registros produzidos para o Instagram da Assembleia de Deus — Templo Central de Tarrafas.</p>
             </div>
-            <div class="social-card-meta">
-              <span class="social-index">01</span>
-              <div>
-                <h3>Registro ADTC — 01</h3>
-                <p>@adtctarrafas • 2026 • 01:56</p>
-              </div>
-              <ul class="social-roles" aria-label="Funções exercidas neste vídeo">
-                <li>Captação</li>
-                <li>Edição</li>
-              </ul>
-            </div>
-          </article>
+          </div>
 
-          <article class="social-card reveal">
-            <div class="social-video-shell">
-              <video
-                controls
-                playsinline
-                preload="metadata"
-                poster="assets/adtc-tarrafas-video-02-poster.jpg"
-                aria-label="Segundo registro audiovisual produzido para o Instagram da ADTC Tarrafas"
-              >
-                <source src="assets/adtc-tarrafas-video-02.mp4" type="video/mp4" />
-                Seu navegador não consegue reproduzir este vídeo.
-              </video>
-            </div>
-            <div class="social-card-meta">
-              <span class="social-index">02</span>
-              <div>
-                <h3>Registro ADTC — 02</h3>
-                <p>@adtctarrafas • 2026 • 00:50</p>
+          <div class="social-grid">
+            <article class="social-card reveal">
+              <div class="social-video-shell">
+                <video
+                  controls
+                  playsinline
+                  preload="metadata"
+                  poster="assets/adtc-tarrafas-video-01-poster.jpg"
+                  aria-label="Registro audiovisual produzido para o Instagram da ADTC Tarrafas em 2026"
+                >
+                  <source src="assets/adtc-tarrafas-video-01.mp4" type="video/mp4" />
+                  Seu navegador não consegue reproduzir este vídeo.
+                </video>
               </div>
-              <ul class="social-roles" aria-label="Funções exercidas neste vídeo">
-                <li>Captação</li>
-                <li>Edição</li>
-              </ul>
-            </div>
-          </article>
+              <div class="social-card-meta">
+                <span class="social-index">01</span>
+                <div>
+                  <h3>Registro ADTC — 01</h3>
+                  <p>@adtctarrafas • 2026 • 01:56</p>
+                </div>
+                <ul class="social-roles" aria-label="Funções exercidas neste vídeo">
+                  <li>Direção de mídia</li>
+                  <li>Captação</li>
+                  <li>Montagem</li>
+                  <li>Edição principal</li>
+                </ul>
+              </div>
+            </article>
 
-          <article class="social-card reveal">
-            <div class="social-video-shell">
-              <video
-                controls
-                playsinline
-                preload="metadata"
-                poster="assets/adtc-tarrafas-video-03-poster.jpg"
-                aria-label="Terceiro registro audiovisual produzido para o Instagram da ADTC Tarrafas"
-              >
-                <source src="assets/adtc-tarrafas-video-03.mp4" type="video/mp4" />
-                Seu navegador não consegue reproduzir este vídeo.
-              </video>
-            </div>
-            <div class="social-card-meta">
-              <span class="social-index">03</span>
-              <div>
-                <h3>Registro ADTC — 03</h3>
-                <p>@adtctarrafas • 2026 • 01:55</p>
+            <article class="social-card reveal">
+              <div class="social-video-shell">
+                <video
+                  controls
+                  playsinline
+                  preload="metadata"
+                  poster="assets/adtc-tarrafas-video-02-poster.jpg"
+                  aria-label="Segundo registro audiovisual produzido para o Instagram da ADTC Tarrafas em 2026"
+                >
+                  <source src="assets/adtc-tarrafas-video-02.mp4" type="video/mp4" />
+                  Seu navegador não consegue reproduzir este vídeo.
+                </video>
               </div>
-              <ul class="social-roles" aria-label="Funções exercidas neste vídeo">
-                <li>Captação</li>
-                <li>Edição</li>
-              </ul>
-            </div>
-          </article>
+              <div class="social-card-meta">
+                <span class="social-index">02</span>
+                <div>
+                  <h3>Registro ADTC — 02</h3>
+                  <p>@adtctarrafas • 2026 • 00:50</p>
+                </div>
+                <ul class="social-roles" aria-label="Funções exercidas neste vídeo">
+                  <li>Direção de mídia</li>
+                  <li>Captação</li>
+                  <li>Montagem</li>
+                  <li>Edição principal</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="social-card reveal">
+              <div class="social-video-shell">
+                <video
+                  controls
+                  playsinline
+                  preload="metadata"
+                  poster="assets/adtc-tarrafas-video-03-poster.jpg"
+                  aria-label="Terceiro registro audiovisual produzido para o Instagram da ADTC Tarrafas em 2026"
+                >
+                  <source src="assets/adtc-tarrafas-video-03.mp4" type="video/mp4" />
+                  Seu navegador não consegue reproduzir este vídeo.
+                </video>
+              </div>
+              <div class="social-card-meta">
+                <span class="social-index">03</span>
+                <div>
+                  <h3>Registro ADTC — 03</h3>
+                  <p>@adtctarrafas • 2026 • 01:55</p>
+                </div>
+                <ul class="social-roles" aria-label="Funções exercidas neste vídeo">
+                  <li>Direção de mídia</li>
+                  <li>Captação</li>
+                  <li>Montagem</li>
+                  <li>Edição principal</li>
+                </ul>
+              </div>
+            </article>
+          </div>
         </div>
+
+        <div class="media-year" id="midia-2025">
+          <div class="year-head reveal">
+            <p class="year-number">2025</p>
+            <div class="year-copy">
+              <h3>Continuidade na liderança da equipe</h3>
+              <p>Direção da equipe de mídia, gravação, montagem e edição principal de conteúdos para o @adtctarrafas.</p>
+            </div>
+          </div>
+          <div class="year-summary reveal">
+            <div>
+              <strong>Produção audiovisual para redes</strong>
+              <p>Atuação contínua na organização e realização dos registros da igreja, acompanhando o conteúdo da gravação à entrega final.</p>
+              <ul class="year-roles" aria-label="Funções exercidas em 2025">
+                <li>Direção de equipe</li>
+                <li>Gravação</li>
+                <li>Montagem</li>
+                <li>Edição principal</li>
+              </ul>
+            </div>
+            <span class="year-status">Vídeos serão adicionados</span>
+          </div>
+        </div>
+
+        <div class="media-year" id="midia-2024">
+          <div class="year-head reveal">
+            <p class="year-number">2024</p>
+            <div class="year-copy">
+              <h3>Início da trajetória audiovisual</h3>
+              <p>Primeiro ano da atuação na direção e produção dos conteúdos da equipe de mídia do @adtctarrafas.</p>
+            </div>
+          </div>
+          <div class="year-summary reveal">
+            <div>
+              <strong>Direção, gravação e pós-produção</strong>
+              <p>Experiência construída na rotina real de produção: organização da equipe e das gravações, montagem e edição dos materiais publicados.</p>
+              <ul class="year-roles" aria-label="Funções exercidas em 2024">
+                <li>Direção de equipe</li>
+                <li>Gravação</li>
+                <li>Montagem</li>
+                <li>Edição principal</li>
+              </ul>
+            </div>
+            <span class="year-status">Vídeos serão adicionados</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="trajectory-section" id="trajetoria" aria-labelledby="trajectory-title">
+        <div class="trajectory-head reveal">
+          <div>
+            <p class="section-label">Trajetória / 2024—2026</p>
+            <h2 id="trajectory-title">Experiência em movimento.</h2>
+          </div>
+          <p>Uma trajetória construída na prática, combinando liderança de equipe, produção recorrente para redes e participação criativa em obras audiovisuais.</p>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <span class="timeline-year">2024</span>
+            <h3>Direção da equipe de mídia</h3>
+            <p>Início da atuação audiovisual no @adtctarrafas, assumindo direção da equipe, organização das gravações, captação, montagem e edição principal dos conteúdos.</p>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-year">2025</span>
+            <h3>Liderança e expansão criativa</h3>
+            <p>Continuidade na produção da equipe de mídia e ampliação da experiência em curtas: fotografia e direção de arte em <strong>Quinhentismo</strong>; câmera, trilha/música e elenco em <strong>Uma Nova Luz</strong>.</p>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-year">2026</span>
+            <h3>Produção consolidada</h3>
+            <p>Novos registros para o @adtctarrafas, mantendo a direção da equipe e a edição principal, além da atuação no curta <strong>Escuta</strong>, em elenco e narração.</p>
+          </li>
+        </ol>
       </section>
 
       <section class="credit-section" id="atuacao" aria-labelledby="credit-title">
         <div class="credit-intro reveal">
           <div>
-            <p class="section-label">Perfil multidisciplinar</p>
-            <h2 id="credit-title">Da ideia à cena.</h2>
+            <p class="section-label">Competências de produção</p>
+            <h2 id="credit-title">Da equipe à entrega.</h2>
           </div>
           <p>
-            Um repertório construído em diferentes etapas do audiovisual: concepção visual, captação, performance e som.
+            Experiência prática nas etapas que sustentam uma produção audiovisual: liderança, organização, realização técnica e construção criativa.
           </p>
         </div>
         <div class="credit-grid">
-          <div class="credit-item"><span>01</span><strong>Elenco</strong></div>
-          <div class="credit-item"><span>02</span><strong>Fotografia</strong></div>
-          <div class="credit-item"><span>03</span><strong>Direção de arte</strong></div>
-          <div class="credit-item"><span>04</span><strong>Câmera</strong></div>
-          <div class="credit-item"><span>05</span><strong>Narração</strong></div>
-          <div class="credit-item"><span>06</span><strong>Trilha / Música</strong></div>
-          <div class="credit-item"><span>07</span><strong>Edição</strong></div>
+          <div class="credit-item">
+            <span>01</span>
+            <div class="credit-copy"><strong>Direção de equipe</strong><p>Liderança da equipe de mídia do @adtctarrafas.</p></div>
+          </div>
+          <div class="credit-item">
+            <span>02</span>
+            <div class="credit-copy"><strong>Gestão de produção</strong><p>Organização do trabalho e acompanhamento das etapas audiovisuais.</p></div>
+          </div>
+          <div class="credit-item">
+            <span>03</span>
+            <div class="credit-copy"><strong>Organização de gravações</strong><p>Coordenação da equipe e preparação do fluxo de registro.</p></div>
+          </div>
+          <div class="credit-item">
+            <span>04</span>
+            <div class="credit-copy"><strong>Captação</strong><p>Gravação de conteúdos digitais e participação com câmera em curta.</p></div>
+          </div>
+          <div class="credit-item">
+            <span>05</span>
+            <div class="credit-copy"><strong>Montagem</strong><p>Seleção e organização narrativa do material gravado.</p></div>
+          </div>
+          <div class="credit-item">
+            <span>06</span>
+            <div class="credit-copy"><strong>Edição principal</strong><p>Responsabilidade pela edição final dos conteúdos da equipe de mídia.</p></div>
+          </div>
+          <div class="credit-item">
+            <span>07</span>
+            <div class="credit-copy"><strong>Fotografia &amp; direção de arte</strong><p>Funções criativas exercidas em Quinhentismo.</p></div>
+          </div>
+          <div class="credit-item">
+            <span>08</span>
+            <div class="credit-copy"><strong>Câmera &amp; trilha / música</strong><p>Experiência técnica e musical em Uma Nova Luz.</p></div>
+          </div>
+          <div class="credit-item">
+            <span>09</span>
+            <div class="credit-copy"><strong>Narração &amp; elenco</strong><p>Atuação diante das câmeras e trabalho de voz em obras selecionadas.</p></div>
+          </div>
         </div>
       </section>
 
       <section class="closing" aria-labelledby="closing-title">
         <div class="closing-inner reveal">
-          <p class="section-label">Portfólio audiovisual</p>
-          <h2 id="closing-title">Histórias ganham força quando cada detalhe <em>entra em cena.</em></h2>
+          <p class="section-label">Produção audiovisual</p>
+          <h2 id="closing-title">Boas histórias precisam de visão — e de alguém que faça <em>cada etapa acontecer.</em></h2>
           <button class="share-large" type="button" data-share>Compartilhar portfólio</button>
         </div>
       </section>
@@ -1386,7 +1870,7 @@
 
     <footer>
       <span>© 2026 — Sâmilly de Oliveira Saraiva</span>
-      <span>Portfólio audiovisual</span>
+      <span>Produção &amp; portfólio audiovisual</span>
     </footer>
 
     <dialog id="video-dialog" aria-labelledby="dialog-title">
