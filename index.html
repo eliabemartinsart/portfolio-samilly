@@ -1076,7 +1076,18 @@
         font-style: normal;
       }
 
+      .contact-actions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem;
+      }
+
+      .contact-link,
       .share-large {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
         border: 0;
         border-radius: 999px;
         padding: 1.15rem 1.6rem;
@@ -1084,15 +1095,49 @@
         color: var(--ink);
         font: 800 0.8rem/1 var(--sans);
         letter-spacing: 0.08em;
+        text-decoration: none;
         text-transform: uppercase;
         cursor: pointer;
         transition: background 180ms ease, transform 180ms ease;
       }
 
+      .contact-link:hover,
+      .contact-link:focus-visible,
       .share-large:hover,
       .share-large:focus-visible {
         transform: translateY(-3px);
         background: var(--accent);
+      }
+
+      .contact-link.whatsapp {
+        background: var(--accent);
+      }
+
+      .contact-link.whatsapp:hover,
+      .contact-link.whatsapp:focus-visible {
+        background: var(--paper);
+      }
+
+      .contact-details {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.65rem 1.4rem;
+        margin: 1.4rem 0 0;
+        color: var(--muted);
+        font: 0.78rem/1.5 var(--mono);
+      }
+
+      .contact-details a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .contact-details a:hover,
+      .contact-details a:focus-visible {
+        color: var(--paper);
+        text-decoration: underline;
+        text-underline-offset: 0.35em;
       }
 
       footer {
@@ -1917,18 +1962,70 @@
               <p>Direção da equipe de mídia, gravação, montagem e edição principal de conteúdos para o @adtctarrafas.</p>
             </div>
           </div>
-          <div class="year-summary reveal">
-            <div>
-              <strong>Produção audiovisual para redes</strong>
-              <p>Atuação contínua na organização e realização dos registros da igreja, acompanhando o conteúdo da gravação à entrega final.</p>
-              <ul class="year-roles" aria-label="Funções exercidas em 2025">
-                <li>Direção de equipe</li>
-                <li>Gravação</li>
-                <li>Montagem</li>
-                <li>Edição principal</li>
-              </ul>
-            </div>
-            <span class="year-status">Acervo em atualização</span>
+          <div class="social-grid">
+            <article class="social-card reveal">
+              <div class="social-video-shell">
+                <video controls playsinline preload="metadata" poster="assets/adtc-tarrafas-2025-01-poster.jpg" aria-label="Primeiro registro audiovisual da ADTC Tarrafas em 2025">
+                  <source src="assets/adtc-tarrafas-2025-01.mp4" type="video/mp4" />
+                  Seu navegador não consegue reproduzir este vídeo.
+                </video>
+              </div>
+              <div class="social-card-meta">
+                <span class="social-index">01</span>
+                <div><h3>Registro ADTC — 2025.01</h3><p>@adtctarrafas • 2025 • 01:30</p></div>
+                <ul class="social-roles" aria-label="Funções exercidas neste vídeo">
+                  <li>Direção de equipe</li><li>Gravação</li><li>Montagem</li><li>Edição principal</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="social-card reveal">
+              <div class="social-video-shell">
+                <video controls playsinline preload="metadata" poster="assets/adtc-tarrafas-2025-02-poster.jpg" aria-label="Segundo registro audiovisual da ADTC Tarrafas em 2025">
+                  <source src="assets/adtc-tarrafas-2025-02.mp4" type="video/mp4" />
+                  Seu navegador não consegue reproduzir este vídeo.
+                </video>
+              </div>
+              <div class="social-card-meta">
+                <span class="social-index">02</span>
+                <div><h3>Registro ADTC — 2025.02</h3><p>@adtctarrafas • 2025 • 01:20</p></div>
+                <ul class="social-roles" aria-label="Funções exercidas neste vídeo">
+                  <li>Direção de equipe</li><li>Gravação</li><li>Montagem</li><li>Edição principal</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="social-card reveal">
+              <div class="social-video-shell">
+                <video controls playsinline preload="metadata" poster="assets/adtc-tarrafas-2025-03-poster.jpg" aria-label="Terceiro registro audiovisual da ADTC Tarrafas em 2025">
+                  <source src="assets/adtc-tarrafas-2025-03.mp4" type="video/mp4" />
+                  Seu navegador não consegue reproduzir este vídeo.
+                </video>
+              </div>
+              <div class="social-card-meta">
+                <span class="social-index">03</span>
+                <div><h3>Registro ADTC — 2025.03</h3><p>@adtctarrafas • 2025 • 01:00</p></div>
+                <ul class="social-roles" aria-label="Funções exercidas neste vídeo">
+                  <li>Direção de equipe</li><li>Gravação</li><li>Montagem</li><li>Edição principal</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="social-card reveal">
+              <div class="social-video-shell">
+                <video controls playsinline preload="metadata" poster="assets/adtc-tarrafas-2025-04-poster.jpg" aria-label="Quarto registro audiovisual da ADTC Tarrafas em 2025">
+                  <source src="assets/adtc-tarrafas-2025-04.mp4" type="video/mp4" />
+                  Seu navegador não consegue reproduzir este vídeo.
+                </video>
+              </div>
+              <div class="social-card-meta">
+                <span class="social-index">04</span>
+                <div><h3>Registro ADTC — 2025.04</h3><p>@adtctarrafas • 2025 • 01:01</p></div>
+                <ul class="social-roles" aria-label="Funções exercidas neste vídeo">
+                  <li>Direção de equipe</li><li>Gravação</li><li>Montagem</li><li>Edição principal</li>
+                </ul>
+              </div>
+            </article>
           </div>
         </div>
 
@@ -1940,18 +2037,70 @@
               <p>Primeiro ano da atuação na direção e produção dos conteúdos da equipe de mídia do @adtctarrafas.</p>
             </div>
           </div>
-          <div class="year-summary reveal">
-            <div>
-              <strong>Direção, gravação e pós-produção</strong>
-              <p>Experiência construída na rotina real de produção: organização da equipe e das gravações, montagem e edição dos materiais publicados.</p>
-              <ul class="year-roles" aria-label="Funções exercidas em 2024">
-                <li>Direção de equipe</li>
-                <li>Gravação</li>
-                <li>Montagem</li>
-                <li>Edição principal</li>
-              </ul>
-            </div>
-            <span class="year-status">Acervo em atualização</span>
+          <div class="social-grid">
+            <article class="social-card reveal">
+              <div class="social-video-shell">
+                <video controls playsinline preload="metadata" poster="assets/adtc-tarrafas-2024-01-poster.jpg" aria-label="Primeiro registro audiovisual da ADTC Tarrafas em 2024">
+                  <source src="assets/adtc-tarrafas-2024-01.mp4" type="video/mp4" />
+                  Seu navegador não consegue reproduzir este vídeo.
+                </video>
+              </div>
+              <div class="social-card-meta">
+                <span class="social-index">01</span>
+                <div><h3>Registro ADTC — 2024.01</h3><p>@adtctarrafas • 2024 • 00:57</p></div>
+                <ul class="social-roles" aria-label="Funções exercidas neste vídeo">
+                  <li>Direção de equipe</li><li>Gravação</li><li>Montagem</li><li>Edição principal</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="social-card reveal">
+              <div class="social-video-shell">
+                <video controls playsinline preload="metadata" poster="assets/adtc-tarrafas-2024-02-poster.jpg" aria-label="Segundo registro audiovisual da ADTC Tarrafas em 2024">
+                  <source src="assets/adtc-tarrafas-2024-02.mp4" type="video/mp4" />
+                  Seu navegador não consegue reproduzir este vídeo.
+                </video>
+              </div>
+              <div class="social-card-meta">
+                <span class="social-index">02</span>
+                <div><h3>Registro ADTC — 2024.02</h3><p>@adtctarrafas • 2024 • 02:15</p></div>
+                <ul class="social-roles" aria-label="Funções exercidas neste vídeo">
+                  <li>Direção de equipe</li><li>Gravação</li><li>Montagem</li><li>Edição principal</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="social-card reveal">
+              <div class="social-video-shell">
+                <video controls playsinline preload="metadata" poster="assets/adtc-tarrafas-2024-03-poster.jpg" aria-label="Terceiro registro audiovisual da ADTC Tarrafas em 2024">
+                  <source src="assets/adtc-tarrafas-2024-03.mp4" type="video/mp4" />
+                  Seu navegador não consegue reproduzir este vídeo.
+                </video>
+              </div>
+              <div class="social-card-meta">
+                <span class="social-index">03</span>
+                <div><h3>Registro ADTC — 2024.03</h3><p>@adtctarrafas • 2024 • 00:50</p></div>
+                <ul class="social-roles" aria-label="Funções exercidas neste vídeo">
+                  <li>Direção de equipe</li><li>Gravação</li><li>Montagem</li><li>Edição principal</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="social-card reveal">
+              <div class="social-video-shell">
+                <video controls playsinline preload="metadata" poster="assets/adtc-tarrafas-2024-04-poster.jpg" aria-label="Quarto registro audiovisual da ADTC Tarrafas em 2024">
+                  <source src="assets/adtc-tarrafas-2024-04.mp4" type="video/mp4" />
+                  Seu navegador não consegue reproduzir este vídeo.
+                </video>
+              </div>
+              <div class="social-card-meta">
+                <span class="social-index">04</span>
+                <div><h3>Registro ADTC — 2024.04</h3><p>@adtctarrafas • 2024 • 01:07</p></div>
+                <ul class="social-roles" aria-label="Funções exercidas neste vídeo">
+                  <li>Direção de equipe</li><li>Gravação</li><li>Montagem</li><li>Edição principal</li>
+                </ul>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -2034,11 +2183,17 @@
         </div>
       </section>
 
-      <section class="closing" aria-labelledby="closing-title">
+      <section class="closing" id="contato" aria-labelledby="closing-title">
         <div class="closing-inner reveal">
-          <p class="section-label">Produção audiovisual</p>
+          <p class="section-label">Contato profissional</p>
           <h2 id="closing-title">Boas histórias precisam de visão — e de alguém que faça <em>cada etapa acontecer.</em></h2>
-          <button class="share-large" type="button" data-share>Compartilhar portfólio</button>
+          <div class="contact-actions" aria-label="Formas de contato">
+            <a class="contact-link whatsapp" href="https://wa.me/558892380460" target="_blank" rel="noopener noreferrer">Conversar no WhatsApp</a>
+            <button class="share-large" type="button" data-share>Compartilhar portfólio</button>
+          </div>
+          <div class="contact-details">
+            <a href="https://wa.me/558892380460" target="_blank" rel="noopener noreferrer">+55 88 9238-0460</a>
+          </div>
         </div>
       </section>
     </main>
