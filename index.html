@@ -397,16 +397,19 @@
         justify-content: space-between;
         padding: clamp(4rem, 7vw, 7rem) 2rem;
         border-right: 1px solid var(--line);
+        container-type: inline-size;
       }
 
       .about-heading h2 {
-        max-width: 7ch;
+        width: 100%;
+        max-width: 100%;
         margin: 1.5rem 0 0;
         font-family: var(--display);
-        font-size: clamp(3.2rem, 5.6vw, 5.6rem);
+        font-size: clamp(3rem, 14cqw, 5.3rem);
         font-weight: 900;
         letter-spacing: -0.065em;
         line-height: 0.82;
+        overflow-wrap: normal;
         text-transform: uppercase;
       }
 
@@ -427,16 +430,19 @@
         align-content: center;
         gap: clamp(2.4rem, 5vw, 5rem);
         padding: clamp(4rem, 8vw, 8rem) clamp(2rem, 6vw, 7rem);
+        container-type: inline-size;
       }
 
       .about-lead {
-        max-width: 19ch;
+        width: 100%;
+        max-width: min(19ch, 100%);
         margin: 0;
         font-family: var(--display);
-        font-size: clamp(2.2rem, 4.7vw, 5.2rem);
+        font-size: clamp(2.2rem, 8cqw, 4.8rem);
         font-weight: 800;
         letter-spacing: -0.05em;
         line-height: 0.95;
+        overflow-wrap: break-word;
         text-transform: uppercase;
       }
 
@@ -893,20 +899,24 @@
 
       .credit-intro {
         display: flex;
+        min-width: 0;
         flex-direction: column;
         justify-content: space-between;
         padding: clamp(4rem, 7vw, 7rem) 2rem;
         border-right: 1px solid var(--line);
+        container-type: inline-size;
       }
 
       .credit-intro h2 {
-        max-width: 8ch;
+        width: 100%;
+        max-width: 100%;
         margin: 1.5rem 0 2rem;
         font-family: var(--display);
-        font-size: clamp(3.2rem, 6vw, 6rem);
+        font-size: clamp(2.75rem, 13cqw, 5.25rem);
         font-weight: 900;
         letter-spacing: -0.06em;
         line-height: 0.86;
+        overflow-wrap: normal;
         text-transform: uppercase;
       }
 
@@ -918,18 +928,21 @@
 
       .credit-grid {
         display: grid;
+        min-width: 0;
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
       .credit-item {
         position: relative;
         display: flex;
+        min-width: 0;
         min-height: 13rem;
         flex-direction: column;
         justify-content: space-between;
         padding: 1.5rem;
         border-right: 1px solid var(--line);
         border-bottom: 1px solid var(--line);
+        container-type: inline-size;
         transition: background 220ms ease, color 220ms ease;
       }
 
@@ -956,15 +969,19 @@
       }
 
       .credit-item strong {
+        display: block;
+        max-width: 100%;
         font-family: var(--display);
-        font-size: clamp(1.65rem, 3vw, 3rem);
+        font-size: clamp(1.5rem, 8cqw, 2.55rem);
         letter-spacing: -0.04em;
         line-height: 0.95;
+        overflow-wrap: break-word;
         text-transform: uppercase;
       }
 
       .credit-copy {
         display: grid;
+        min-width: 0;
         gap: 0.75rem;
       }
 
